@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NOVA GRID | Официальный сайт</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #0d0d1a; /* Глубокий темный фон */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      .main-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 50px;
+        border-radius: 30px;
+        border: 1px solid rgba(0, 210, 255, 0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        font-size: 4em;
+        color: #00d2ff;
+        letter-spacing: 5px;
+        margin: 0;
+        text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+      }
+      .founder {
+        color: #ffcc00;
+        font-size: 1.2em;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .btn {
+        background: #00d2ff;
+        color: #0d0d1a;
+        padding: 18px 40px;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: 0.4s;
+        cursor: pointer;
+        border: none;
+        margin-top: 25px;
+      }
+      .btn:hover {
+        transform: scale(1.05);
+        background: #fff;
+        box-shadow: 0 0 30px #00d2ff;
+      }
+      /* Тот самый НИЗ (Footer) */
+      footer {
+        width: 100%;
+        padding: 30px 0;
+        background: rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(0, 210, 255, 0.2);
+        margin-top: 50px;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 15px;
+      }
+      .footer-links a {
+        color: #00d2ff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .footer-links a:hover {
+        color: white;
+      }
+      .version-info {
+        color: #777;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-section">
+      <div class="container">
+        <h1>NOVA GRID</h1>
+        <div class="founder">Основатель: GorGamer</div>
+        <p>Выживание, которое ты заслуживаешь.</p>
+        <button class="btn" onclick="copyIP()">ЗАЙТИ НА СЕРВЕР</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">DISCORD</a>
+        <a href="#">VK ГРУППА</a>
+        <a href="#">ДОНАТ</a>
+      </div>
+      <div class="version-info">
+        Версия игры: 1.20.1+ | 2026 &copy; NOVA GRID Project
+      </div>
+    </footer>
+
+    <script>
+      function copyIP() {
+        const ip = "conditions-finder.gl.joinmc.link"; // Твой домен
+        navigator.clipboard.writeText(ip);
+        alert("IP сервера Nova Grid скопирован! Ждем тебя, " + "GorGamer!");
+      }
+    </script>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🌍 МИР</h3>
+        <p>Огромная карта с уникальной генерацией и стабильным ТПС.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💎 ЭКОНОМИКА</h3>
+        <p>Честный рынок, работы и сбалансированная система торговли.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚔️ PVP & PVE</h3>
+        <p>Защита от читеров и захватывающие сражения с боссами.</p>
+      </div>
+    </div>
+
+    <style>
+      /* Добавь эти стили в раздел <style> */
+      .features {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+      }
+      .feature-card {
+        background: rgba(0, 210, 255, 0.05);
+        border: 1px solid rgba(0, 210, 255, 0.2);
+        padding: 20px;
+        border-radius: 15px;
+        width: 250px;
+        transition: 0.3s;
+      }
+      .feature-card:hover {
+        background: rgba(0, 210, 255, 0.1);
+        transform: translateY(-5px);
+      }
+      .feature-card h3 {
+        color: #00d2ff;
+        margin-top: 0;
+      }
+      .feature-card p {
+        font-size: 0.9em;
+        color: #ccc;
+        line-height: 1.5;
+      }
+    </style>
+  </body>
+</html>
